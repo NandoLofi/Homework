@@ -3,16 +3,37 @@ const route = express.Router();
 let pokedex = require('../models/pokemon')
 
 //index route
-route.get('/', (req, res)=>{
+route.get('/pokemon', (req, res)=>{
     res.send("Welcome to the home route")
 })
 
-//create route
+//show route
+route.get('/pokemon/:id', (req, res)=>{
+    res.send("Welcome to show route")
+})
 
-//update route
+//new route
+route.get('/pokemon/new', (req, res)=>{
+    res.send("Welcome to the new route")
+})
+
+//edit route
+route.get('/pokemon/:id/edit', (req, res)=>{
+    res.send("Welcome to the edit route")
+})
+
+//create route
+route.post('/pokemon', (req, res)=>{
+    res.send("Welcome")
+})
+route.put('/pokemon/:id', (req, res)=>{
+    res.send("Welcome")
+})
 
 //delete route
-
+route.delete('/pokemon/:id', (req, res)=>{
+    res.send("Welcome")
+})
 
 
 
