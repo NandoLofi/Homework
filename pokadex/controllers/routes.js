@@ -3,7 +3,7 @@ const { Stats } = require('fs');
 const route = express.Router();
 let pokedex = require('../models/pokemon')
 let editPokemon = [{
-    name:'',
+    name:[],
 },
 {
     stats: ['attack', 'defense', 'spattack', 'spdefense', 'speed']
