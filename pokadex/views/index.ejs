@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="stylesheet" href="public/styles.css">
     <title>Choose Your Pokemon</title>
 </head>
 <body>
-    <div class="container">
+    <nav> <a href="/pokemon/new"><button>Add New Pokemon</button></a> </nav>
+    <div class="gridcontain">
         <% for(let pokemon in Deck) { %>
-            <img src="<%= Deck[pokemon].img%>"/>
-    
-
+            <div class="picturerow">
+                <div class="picturecolumn">  
+                    <a href="/pokemon/<%=pokemon%> "><button><img src="<%= Deck[pokemon].img%>"/></button></a>
+                    Name: <%=Deck[pokemon].name%> 
+                </div>
+            </div>
         <% } %> 
     </div>
 </body>

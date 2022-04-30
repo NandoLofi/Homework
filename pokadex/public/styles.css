@@ -1,0 +1,21 @@
+.gridcontain {
+    display: grid;
+    grid-template-columns: repeat(12, 0fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+.picturerow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10 4px;
+  }
+.picturecolumn {
+    flex: 50%;
+    padding: 10 10px;
+  }
+.picturecolumn img {
+    height: 80%;
+    width: 80%;
+    margin-top: 8px;
+    vertical-align: middle;
+}
