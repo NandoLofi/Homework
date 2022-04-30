@@ -1,7 +1,13 @@
 const express = require('express');
+const { Stats } = require('fs');
 const route = express.Router();
 let pokedex = require('../models/pokemon')
-
+let editPokemon = [{
+    name:'',
+},
+{
+    stats: ['attack', 'defense', 'spattack', 'spdefense', 'speed']
+}]
 //index route
 route.get('/pokemon', (req, res)=>{
     res.render("index.ejs", {Deck: pokedex})
@@ -27,13 +33,15 @@ route.get('/pokemon/:id', (req, res)=>{
 })
 
 //edit route
-route.put('pokemon/:id', (req, res) => {
-    pokedex[req.params.id] = req.body
+route.put('/pokemon/:id', (req, res) => {
+    pokedex[req.params.id] = editPokemon
+    
 })
 
 //create route
 route.post('/pokemon', (req, res)=>{
     res.send("Welcome")
+    
 })
 
 
