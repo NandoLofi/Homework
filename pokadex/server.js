@@ -5,8 +5,7 @@ const app = express();
 
 //middleware
 app.use(express.urlencoded({extended: false}))
-
-
+app.use('/public', express.static('public'));
 
 
 

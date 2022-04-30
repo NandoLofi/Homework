@@ -4,7 +4,7 @@ let pokedex = require('../models/pokemon')
 
 //index route
 route.get('/pokemon', (req, res)=>{
-    res.send("Welcome to the home route")
+    res.render("index.ejs", {Deck: pokedex})
 })
 
 //show route
