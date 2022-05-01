@@ -30,8 +30,13 @@ route.get('/pokemon/:id', (req, res)=>{
 //edit route
 route.put('/pokemon/:id', (req, res) => {
     const editPokemon={
+        name: req.body.name,
         stats: {
-            attack: req.body.attack
+            attack: req.body.attack,
+            defense: req.body.defense,
+            spattack: req.body.spattack,
+            spdefense: req.body.spdefense,
+            speed: req.body.speed
         }
     }
     pokedex[req.params.id]=editPokemon
