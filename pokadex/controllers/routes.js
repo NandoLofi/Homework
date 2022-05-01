@@ -44,9 +44,19 @@ route.put('/pokemon/:id', (req, res) => {
 })
 
 //create route
-route.post('/pokemon', (req, res)=>{
-    res.send("Welcome")
-    
+route.post('/pokemon', (req, res)=> {
+    const newPokemon = {
+        name: req.body.name,
+        stats: {
+            attack: req.body.attack,
+            defense: req.body.defense,
+            spattack: req.body.spattack,
+            spdefense: req.body.spdefense,
+            speed: req.body.speed
+        }  
+    }
+    pokedex[req.params.id]= newPokemon
+    res.redirect('/pokemon')
 })
 
 
