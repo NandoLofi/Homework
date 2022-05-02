@@ -14,7 +14,9 @@ route.get('/pokemon/new', (req, res)=>{
 })
 //delete route
 route.delete('/pokemon/:id', (req, res)=>{
-    res.send("Welcome")
+    const index = req.params.id
+    pokedex.splice[index, 0]
+    res.redirect('/pokemon')
 })
 
 //edit route
@@ -46,6 +48,7 @@ route.put('/pokemon/:id', (req, res) => {
 //create route
 route.post('/pokemon', (req, res)=> {
     const newPokemon = {
+        id: req.body.id,
         name: req.body.name,
         stats: {
             attack: req.body.attack,
