@@ -1,6 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
-import Sidebar from './components/sidebar';
+import Sidebar from './Sidebar/Sidebar';
 
 function App() {
   return (
