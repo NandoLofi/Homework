@@ -1,0 +1,11 @@
+ul {
+    width: 10%;
+    background-color: bisque;
+    list-style-type: none;
+}
+li {
+    margin: 12px 0;
+}
+p {
+    font-weight: bold;
+}

@@ -1,11 +1,12 @@
-import Sidebar from './Sidebar/Sidebar';
-
+import Sidebar from './components/Sidebar/Sidebar';
+import './App.css'
+import Reviews from './components/Reviews/Reviews'
 function App() {
   return (
-    <>
+  <>
   <Sidebar />
-
-    </>
+  <Reviews/>
+  </>
   );
 }
 
