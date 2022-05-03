@@ -1,7 +1,6 @@
 .gridcontain {
     display: grid;
     grid-template-columns: repeat(9, 0fr);
-    grid-template-rows: repeat(8, 5vw);
     grid-gap: 15px;
 }
 .picturerow {

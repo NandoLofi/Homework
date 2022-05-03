@@ -14,8 +14,8 @@ route.get('/pokemon/new', (req, res)=>{
 })
 //delete route
 route.delete('/pokemon/:id', (req, res)=>{
-    const index = req.params.id
-    pokedex.splice[index, 0]
+    const index = req.params.id 
+    pokedex.splice[index, 1]
     res.redirect('/pokemon')
 })
 
