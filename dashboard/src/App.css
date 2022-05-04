@@ -1,3 +1,17 @@
+div {
+    background-color: lightgray;
+}
 .AllContent{
     display: flex;
+    justify-content: space-around;
+}
+.Reviews {
+    background-color: darkgray;
+    
+}
+.AverageRating {
+    background-color: darkgray;
+}
+.Sentiment {
+    background-color: darkgray;
 }

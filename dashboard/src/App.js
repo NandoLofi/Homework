@@ -2,6 +2,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import './App.css'
 import Reviews from './components/Reviews/Reviews'
 import AverageRating from './components/AverageRating/AverageRating';
+import Sentiment from './components/Sentiments/Sentiment';
 
 function App() {
   return (
@@ -19,7 +20,12 @@ function App() {
     <div className='AverageRating'>
       <AverageRating />
     </div>
-  
+    
+    <div className='Sentiment'>
+      <Sentiment/>
+    </div>
+
+
   </div>
   </>
   );

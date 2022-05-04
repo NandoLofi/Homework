@@ -1,9 +1,10 @@
 ul {
     width: 150px;
-    background-color: bisque;
+    background-color: darkgray;
     list-style-type: none;
     height: 500px;
     padding: 10px 0 0 10px;
+    margin: 20px 10px 20px 10px;
 }
 li {
     margin: 40px 0;
