@@ -4,7 +4,7 @@ import './Reviews.css';
 
 export default function Reviews() {
   return (
-    <div className='Reviews'>
+    <div className='Reviews' >
         Reviews
     </div>
   )

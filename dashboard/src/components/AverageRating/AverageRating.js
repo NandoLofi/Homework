@@ -3,7 +3,7 @@ import './AverageRating.css'
 
 export default function AverageRating() {
   return (
-    <div className='AverageRating'>
+    <div className='AverageRating' >
         Average Rating
     </div>
   )

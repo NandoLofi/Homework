@@ -1,8 +1,7 @@
 .Visitors {
-    font-weight: bold;
-    width: 300px;
-    text-align: center;
-    height: 200px;
-    margin-top: 20px;
+    background-color: lightgray;
+    grid-column-end: 3;
+    width: 800px;
+    height: 400px;
+    
 }
-
