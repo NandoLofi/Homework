@@ -1,12 +1,17 @@
+body {
+    display: flex;
+}
 div {
     background-color: lightgray;
+    height: 100vh;
 }
 .AllContent{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .Reviews {
     background-color: darkgray;
+    
     
 }
 .AverageRating {

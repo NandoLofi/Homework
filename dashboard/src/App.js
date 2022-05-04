@@ -3,6 +3,7 @@ import './App.css'
 import Reviews from './components/Reviews/Reviews'
 import AverageRating from './components/AverageRating/AverageRating';
 import Sentiment from './components/Sentiments/Sentiment';
+import Visitors from './components/Visitors/Visitors';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
     
     <div className='Sentiment'>
       <Sentiment/>
+    </div>
+    <div className='Visitors'>
+      <Visitors/>
     </div>
 
 
