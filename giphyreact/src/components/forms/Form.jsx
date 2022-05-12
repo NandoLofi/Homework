@@ -4,16 +4,18 @@ import { useState } from "react";
 
 export default function Form(props) {
     const [formstate, setformState] = useState({
-        tagTerm: ''
+        tagTerm: '',
     })
 
     const handleChange = (event)=>{
-        setformState({tagTerm: event.target.value})
+        const newState = {...formstate}
+        newState[event.target.name] = event.target.value
+        setformState(newState)
     }
-    const handleSubmit = (event) =>{
-        event.preventdefault()
-        props.getGiph(formstate.tagTerm)
 
+    const handleSubmit = (event) =>{
+        event.preventDefault()
+        props.getGiph(formstate.tagTerm)
     }
 
   return (

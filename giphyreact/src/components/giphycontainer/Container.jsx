@@ -2,9 +2,13 @@ import React from "react";
 
 
 export default function Container(props) {
-  return (
-    <div>
-      <img src={props.giphy.data.url} alt={props.id} />
-      <h3>{props.id}</h3>
-    </div>
-  )}
+    if (props.giphy){
+          return <div>
+            <img src={props.giphy.data.images.original.url} alt={props.giphy.id}/>
+          </div>
+    } else{
+        return <h1>Search!</h1>
+
+    }
+
+  }
