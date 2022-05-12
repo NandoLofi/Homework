@@ -2,16 +2,9 @@ import React from "react";
 
 
 export default function Container(props) {
-  if(props.data){
   return (
     <div>
-      <img src={props.images.original} />
+      <img src={props.url} alt={props.id} />
+      <h3>{props.id}</h3>
     </div>
-  )
-  }
-  else{
-    return
-      <h1>Try again</h1>
-    
-  }
-}
+  )}

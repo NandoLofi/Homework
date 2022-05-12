@@ -4,7 +4,6 @@ import Form from './components/forms/Form';
 import Container from './components/giphycontainer/Container';
 
 
-
 function App() {
   const APIKEY = "pDZSGN1VknA35Rd3V6FPofkywH2CSn8d"
   const [giphy, setGiphy] = useState(null)
@@ -14,13 +13,14 @@ function App() {
 `)
 const data = await response.json()
 setGiphy(data)
+
 }
 
   return (
     <div className="App">
-      <h1>Search for Gihpy!</h1>
-      <Form giphy={giphy}/>
-      <Container getGiph={getGiph} />
+      <h1>Search for Giphy!</h1>
+      <Container giphy={giphy}/>
+      <Form getGiph={getGiph} />
   
     </div>
   );

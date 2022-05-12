@@ -8,17 +8,11 @@ export default function Form(props) {
     })
 
     const handleChange = (event)=>{
-        const newState = {...formstate}
-        newState[event.target.name] = event.target.value
-    
-        setformState(newState)
+        setformState({tagTerm: event.target.value})
     }
     const handleSubmit = (event) =>{
         event.preventdefault()
         props.getGiph(formstate.tagTerm)
-        setformState({
-            tagTerm: ''
-        })
 
     }
 
