@@ -1,7 +1,7 @@
 import './App.css';
 import {useState} from 'react'
-import Form from './components/forms/form';
-import Container from './components/giphycontainer/container';
+import Form from './components/forms/Form';
+import Container from './components/giphycontainer/Container';
 
 
 
@@ -18,6 +18,7 @@ setGiphy(data)
 
   return (
     <div className="App">
+      <h1>Search for Gihpy!</h1>
       <Form giphy={giphy}/>
       <Container getGiph={getGiph} />
   

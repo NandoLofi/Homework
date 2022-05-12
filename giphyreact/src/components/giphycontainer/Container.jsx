@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export default function container(props) {
+export default function Container(props) {
   if(props.data){
   return (
     <div>
