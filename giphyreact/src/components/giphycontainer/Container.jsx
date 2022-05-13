@@ -1,5 +1,5 @@
 import React from "react";
-
+import './container.css'
 
 export default function Container(props) {
     if (props.giphy){
