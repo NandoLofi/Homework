@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
 import {useState, useEffect} from 'react'
+import Shipcards from './Shipcards';
 
 function App() {
-const [ships, setShips] = useState(null)
+const [ships, setShips] = useState([])
 const URL = "https://swapi.dev/api/starships/"
 
 async function getShip() {
@@ -12,12 +13,13 @@ async function getShip() {
   console.log(data)
 }
 useEffect(()=>{
-  getShip();
-}, [])
+  getShip()
+},[])
 
   return (
     <div className="App">
-      <h1>Fleet of Ships</h1>    
+      <h1>Fleet of Ships</h1>   
+      <Shipcards Ships={ships} /> 
     </div>
   );
 }
