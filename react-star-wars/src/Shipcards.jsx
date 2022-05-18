@@ -1,7 +1,11 @@
 import React from 'react'
 
-export default function Shipcards() {
+export default function Shipcards(props) {
   return (
-    <div>Shipcards</div>
+    <div>
+      <h1>ShipCards</h1>
+      <h3> {props.ships.count} </h3>
+
+    </div>
   )
 }
