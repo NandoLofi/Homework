@@ -4,7 +4,7 @@ import {useState, useEffect} from 'react'
 import Shipcards from './Shipcards';
 
 function App() {
-const [ships, setShips] = useState([])
+const [ships, setShips] = useState(null)
 const URL = "https://swapi.dev/api/starships/"
 
 async function getShip() {
@@ -18,8 +18,10 @@ useEffect(()=>{
 
   return (
     <div className="App">
-      <h1>Fleet of Ships</h1>   
-      <Shipcards ships={ships}/>
+      <h1>STARWARS SHIPS</h1>   
+      <div className='Ships'>
+      <Shipcards className="ships" ships={ships}/>
+      </div>
     </div>
   );
 }
