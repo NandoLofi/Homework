@@ -19,7 +19,7 @@ useEffect(()=>{
   return (
     <div className="App">
       <h1>Fleet of Ships</h1>   
-      <Shipcards Ships={ships} /> 
+      <Shipcards />
     </div>
   );
 }

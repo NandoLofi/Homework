@@ -1,15 +1,7 @@
 import React from 'react'
 
-export default function Shipcards(props) {
-    if(props.data){
+export default function Shipcards() {
   return (
-    <div>
-    <h3>
-    {props.ships.data.count}
-    </h3>
-    </div>
+    <div>Shipcards</div>
   )
-    }else{
-        console.log("This did not work")
-    }
 }
