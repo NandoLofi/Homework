@@ -1,9 +1,16 @@
 .Ships{
   display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 150px 150px 150px;
-  margin-top: 20px;
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
-  
+  grid-template-columns: auto auto;
+  background-color: #515151;
+  padding: 8px;
+  border-radius: 10px;
+  align-content: space-around;
 }
+header{
+  padding: .5px;
+  text-align: center;
+  background: #6C5B7B;
+  color: black;
+  font-size: 17px;
+}
+

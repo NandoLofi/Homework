@@ -1,4 +1,5 @@
 import React from 'react'
+import "./shipcards.css"
 
 export default function Shipcards(props) {
   if(props.ships){

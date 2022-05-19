@@ -18,7 +18,9 @@ useEffect(()=>{
 
   return (
     <div className="App">
+      <header>
       <h1>STARWARS SHIPS</h1>   
+      </header>
       <div className='Ships'>
       <Shipcards className="ships" ships={ships}/>
       </div>
