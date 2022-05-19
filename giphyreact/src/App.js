@@ -9,7 +9,7 @@ function App() {
   const [giphy, setGiphy] = useState(null)
   const getGiph = async(tagTerm)=> {
   const response = await fetch (`
-  https://api.giphy.com/v1/gifs/random?api_key=${APIKEY}&tag=${tagTerm}&rating=pg
+  httpsfd://api.giphy.com/v1/gifs/random?api_key=${APIKEY}&tag=${tagTerm}&rating=pg
 `)
 const data = await response.json()
 setGiphy(data)
