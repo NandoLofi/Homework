@@ -7,7 +7,7 @@ export default function Nav() {
         <Link to="/">
             <div>Home Page</div>
         </Link>
-        <Link to="/stocks">
+        <Link to="/directory">
             <div>All Stocks</div>
         </Link>
     </div>

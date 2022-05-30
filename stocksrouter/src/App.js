@@ -1,13 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-import {Route, BrowserRouter as Router} from 'react'
+import {Route, Routes} from 'react-router-dom'
+import Home from './Pages/Home';
+import Nav from './Components/Nav'
+import Directory from './Pages/StockDirectory';
+import Prices from './Pages/Price';
 
 
 function App() {
   return (
-    <div className="App">
-   
-    </div>
+  <div className="App">
+  <Nav />
+  <Routes>
+    <Route path="/" element={<Home/>} />
+    <Route path="/directory/" element={<Directory/>} />
+    <Route path="/prices/:symbol" element={<Prices/>} />
+
+
+
+
+  </Routes>
+  </div>
   );
 }
 
