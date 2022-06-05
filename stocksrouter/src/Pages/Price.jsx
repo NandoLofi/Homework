@@ -12,14 +12,13 @@ export default function Prices() {
     {name: "Intel Corporation", symbol: "INTL", lastPrice: 36.16, change: -0.370000000000005, high: 36.78, low: 36.125, open: 36.58}
   ]
   const {symbol} = useParams()
+  const [state, setState] = useState(null)
+  setState(stocks)
   return (
     <div>
-      {stocks.map((stock)=>{
-        const{lastPrice, open} = stock
-
+      {stocks.map((stock, index)=>{
         return(
-          <h2>Last Price{lastPrice}</h2>,
-          <h2>Open Price{open}</h2>
+          <h2>Last Price{index.lastPrice}</h2>
         )
 
       })}
