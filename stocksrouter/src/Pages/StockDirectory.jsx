@@ -12,12 +12,11 @@ export default function Directory() {
       ]
   return (
     <div className='stockname'>
-      {stocks.map((index)=>{
-        const {name, symbol, lastPrice, open} = index
-          
+      {stocks.map((index, id)=>{
+        const {name, symbol} = index
         return(
-          <Link to={`/prices/${symbol}`}>
-          <h2>{name}</h2>
+          <Link key={id} to={`/prices/${symbol}`}>
+          <h2 key={id}>{name}</h2>
           </Link>
         )
       })}
